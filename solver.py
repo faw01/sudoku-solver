@@ -1,9 +1,6 @@
 import pprint as pp
 import os
 
-os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
-import pygame
-
 
 class SodokuSolver:
     def __init__(self, board):
@@ -35,8 +32,8 @@ class SodokuSolver:
                 if self.board[y][x] == 0:
                     # print(f"empty cell at ({x}, {y})")
                     return y, x
-                
-        print("sodoku solved")
+
+        print("sodoku solved\n")
         return None
 
     def solve(self):
@@ -54,9 +51,9 @@ class SodokuSolver:
 
                 if self.solve():
                     return True
-                
+
                 self.fill_cell(row, col, 0)
-                
+
         return False
 
     def is_valid(self, row, col, choice):
@@ -86,4 +83,3 @@ class SodokuSolver:
 
     def generate_board(self):
         pass
-

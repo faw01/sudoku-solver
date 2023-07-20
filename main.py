@@ -1,5 +1,6 @@
 from solver import SodokuSolver
 
+
 def main():
     # first test case from hard_sudokus_solved.txt
     solver = SodokuSolver(
@@ -9,9 +10,12 @@ def main():
     print()
     solver.solve()
     solver.print_board()
-    print('answer from hard_sudokus_solved.txt')
-    solution = SodokuSolver("693875412145632798782194356357421869816957234429368175274519683968743521531286947")
+    print("answer from hard_sudokus_solved.txt")
+    solution = SodokuSolver(
+        "693875412145632798782194356357421869816957234429368175274519683968743521531286947"
+    )
     solution.print_board()
+
 
 if __name__ == "__main__":
     main()
