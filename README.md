@@ -22,3 +22,13 @@ Sudoku is a constraint satisfaction problem (CSP). This type of problem involves
 4. Each row, column and subgrid must sum to 45.
 
 The backtracking algorithm is a simple and effective method for solving constraint satisfaction problems. It works well for Sudoku because it systematically tries all possible solutions until it finds one that satisfies all the constraints.
+
+## References
+
+https://youtu.be/Zq4upTEaQyM
+
+Followed the principle of: Choice -> <- Constraints -> <- Goal.
+
+https://see.stanford.edu/materials/icspacs106b/lecture11.pdf
+
+Followed psuedocode from this lecture to implement the backtracking algorithm.
