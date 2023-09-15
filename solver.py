@@ -77,9 +77,3 @@ class SodokuSolver:
                     return False
 
         return True
-
-    def board_gui(self):
-        pass
-
-    def generate_board(self):
-        pass
