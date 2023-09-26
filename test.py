@@ -1,9 +1,9 @@
 import unittest
-from solver import SodokuSolver
+from solver import SudokuSolver
 import time
 
 
-class TestSodokuSolver(unittest.TestCase):
+class TestSudokuSolver(unittest.TestCase):
     def test_sudoku_solver(self):
         with open("./tests/hard_sudokus_solved.txt", "r") as f:
             next(f)  # ignore first line as it is the number of sudokus boards
@@ -11,7 +11,7 @@ class TestSodokuSolver(unittest.TestCase):
 
         for line in lines:
             puzzle, solution = line.strip().split(",")
-            solver = SodokuSolver(puzzle)
+            solver = SudokuSolver(puzzle)
 
             start_time = time.time()
             solver.solve()
