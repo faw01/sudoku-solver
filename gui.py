@@ -164,6 +164,7 @@ def game_loop():
                 fixed_cells = [(x, y) for y in range(BOARD_SIZE) for x in range(BOARD_SIZE) if test_board[y][x] != 0]
                 start_time = current_time
                 solved = False
+                iterations = 0
 
         screen.fill(WHITE)
 

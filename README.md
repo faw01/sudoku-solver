@@ -1,6 +1,6 @@
-# Sudoku Solver
+# Sudoku Solver with GUI
 
-This is a Python project that solves Sudoku puzzles. The solver uses a backtracking algorithm to find a solution.
+This is a Python project that solves Sudoku puzzles and provides a GUI for interactive solving. The solver uses a backtracking algorithm to find a solution.
 
 ## Approach
 
@@ -11,6 +11,12 @@ The approach we use for this Sudoku solver is called backtracking, which is a ty
 3. Check if the number violates any of the Sudoku constraints. If it does, try the next number. If it doesn't, move on to the next empty cell.
 4. If you've tried all numbers in a cell and none of them work, backtrack to the previous cell and try the next number there.
 5. Continue this process until you've filled in all cells or determined that no solution is possible.
+
+## GUI
+
+The GUI is developed using Pygame. It provides an intuitive interface for users to interact with the Sudoku board, input numbers, and utilize the solver's capabilities. Users can choose to solve the puzzle step-by-step or get the entire solution instantly.
+
+![Sudoku-Solver GUI](img/sudoku-solver.png)
 
 ## Details
 
@@ -24,6 +30,26 @@ Sudoku is a constraint satisfaction problem (CSP). This type of problem involves
 The backtracking algorithm is a simple and effective method for solving constraint satisfaction problems. It works well for Sudoku because it systematically tries all possible solutions until it finds one that satisfies all the constraints.
 
 Solved 10,000 puzzles from hard_sudokus.txt with 100% accuracy.
+
+## Requirements
+
+- Python 3.x
+- Pygame
+
+To install the requirements:
+
+```
+pip install -r requirements.txt
+```
+
+## Running the GUI
+
+To run the Sudoku GUI:
+
+```
+python gui.py
+```
+
 
 ## References
 
